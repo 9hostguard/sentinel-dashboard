@@ -1,11 +1,35 @@
-name: Security Scan  
-on: [push]  
-jobs:  
-  audit:  
-    runs-on: ubuntu-latest  
-    steps:  
-    - uses: actions/checkout@v4  
-    - name: Run Security Scan  
-      run: |  
-        echo "Simulated security scan"  
-        echo "No vulnerabilities found"
+# CI Workflow Configuration
+# 
+# This file has been replaced by a comprehensive multi-layered security workflow.
+# The new workflow is located at: .github/workflows/security-scan.yml
+#
+# The new workflow includes:
+# - Secret scanning and encryption checks
+# - CodeQL static analysis for multiple languages  
+# - Trivy vulnerability scanning
+# - Semgrep custom rule-based detection
+# - Dependency auditing (npm/pip/safety)
+# - AI-based and heuristic scanning techniques
+# - Automated artifact uploads and reporting
+# - Scheduled and push-triggered scans
+# - Critical vulnerability build failures
+#
+# To use this workflow in other repositories:
+# 1. Copy .github/workflows/security-scan.yml to your repository
+# 2. Adjust the language matrix in CodeQL job as needed
+# 3. Modify dependency audit steps based on your tech stack
+# 4. Configure repository secrets if needed (GITLEAKS_LICENSE)
+# 5. Enable GitHub Advanced Security features
+#
+# Legacy simulated scan (replaced):
+# name: Security Scan  
+# on: [push]  
+# jobs:  
+#   audit:  
+#     runs-on: ubuntu-latest  
+#     steps:  
+#     - uses: actions/checkout@v4  
+#     - name: Run Security Scan  
+#       run: |  
+#         echo "Simulated security scan"  
+#         echo "No vulnerabilities found"
